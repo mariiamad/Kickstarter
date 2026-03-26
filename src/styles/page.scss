@@ -1,35 +1,36 @@
 .page {
+  scroll-behavior: smooth;
+
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  color: $main-text-color;
+  letter-spacing: 0;
   &:has(.page__menu:target) {
     overflow: hidden;
   }
 
-  font-family: Inter, sans-serif;
-  color: $main-text-color;
-  letter-spacing: 0;
-  font-weight: 700;
-
-  scroll-behavior: smooth;
-
   &__body {
-    margin: 0;
     min-width: 320px;
+    margin: 0;
   }
 
   &__menu {
+    pointer-events: none;
+
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
+    transform: translateX(-100%);
 
     opacity: 0;
+
     transition: all $effectDuration;
-    transform: translateX(-100%);
-    pointer-events: none;
 
     &:target {
-      opacity: 1;
       pointer-events: all;
       transform: translateX(0);
+      opacity: 1;
     }
   }
 }

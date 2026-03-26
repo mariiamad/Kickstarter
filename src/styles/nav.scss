@@ -1,23 +1,24 @@
 .nav {
   &__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
     display: flex;
     flex-direction: column;
     gap: 25px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
   }
 
   &__link {
     position: relative;
-    color: inherit;
-    text-decoration: none;
 
     font-family: Inter, sans-serif;
-    font-weight: 400;
     font-size: 14px;
+    font-weight: 400;
     line-height: 20px;
+    color: inherit;
+    text-decoration: none;
 
     &--bold {
       font-weight: 700;
@@ -50,8 +51,8 @@
 
   &__gray {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 300;
     font-size: 14px;
+    font-weight: 300;
     line-height: 100%;
     color: $speacs-color;
 

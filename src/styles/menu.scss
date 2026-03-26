@@ -4,16 +4,15 @@
   background-color: $c-gray;
 
   &__content {
-    height: 100vh;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
   }
 
   &__top {
-    background-color: $c-gray;
     margin-bottom: 32px;
+    background-color: $c-gray;
 
     /* @include on-tablet {
       margin-bottom: 0;
