@@ -1,0 +1,43 @@
+.header {
+  &__image {
+    height: 245px;
+    margin-bottom: 40px;
+
+    background-image: url(../images/image.png);
+    background-size: cover;
+    background-position: center;
+
+    @include on-desktop {
+      height: 400px;
+      margin-bottom: 120px;
+    }
+
+    @include on-desktop {
+      height: 460px;
+    }
+  }
+
+  &__title {
+    font-family: Inter, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+    /* @include on-tablet {
+      font-size: 40px;
+    } */
+  }
+
+    /* @include on-tablet {
+      padding-bottom: 64px;
+    } */
+
+  &__description {
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

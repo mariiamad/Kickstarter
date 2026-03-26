@@ -1,0 +1,50 @@
+.button {
+  margin-top: auto;
+  box-sizing: border-box;
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+  outline: none;
+  border: 0 solid transparent;
+  background-color: $main-text-color;
+  color: $color-white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+
+  transition:
+    background-color $effectDuration,
+    color $effectDuration,
+    border $effectDuration;
+
+  @include on-desktop {
+    grid-column: span 4;
+  }
+
+  /* &--large {
+    grid-column: 1 / -1;
+    margin-top: 16px;
+    line-height: 27px;
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  } */
+
+  &:hover {
+    background-color: $row-background-color;
+    color: $main-text-color;
+    border: $border-big solid $color-button-hover;
+  }
+
+  &:active {
+    transform: scale(0.98);
+    background-color: $color-dark-gray;
+    color: $color-white;
+  }
+}
