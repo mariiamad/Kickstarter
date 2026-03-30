@@ -1,0 +1,49 @@
+.benefits {
+  overflow: hidden;
+  padding: 0;
+  border-radius: $border-radius-smoll;
+
+  @include card-hover;
+
+  &__icon {
+    display: block;
+
+    width: 50px;
+    height: 40px;
+    margin: 0 auto 40px;
+
+    background-image: url(../images/main-img/icon-futuristic.svg);
+    background-position: center;
+    background-size: cover;
+
+    @include on-tablet {
+      margin: 0 auto 50px;
+    }
+
+    @include on-desktop {
+      width: 70px;
+      height: 50px;
+      margin: 0 auto 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__category {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: $main-color;
+    text-align: center;
+  }
+}

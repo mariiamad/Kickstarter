@@ -1,11 +1,13 @@
 .header {
   &__image {
-    height: 245px;
+    aspect-ratio: 320 / 245;
+    width: 100%;
     margin-bottom: 40px;
 
     background-image: url(../images/image.png);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 
     @include on-desktop {
       height: 400px;

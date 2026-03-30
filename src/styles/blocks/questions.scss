@@ -1,0 +1,123 @@
+.questions {
+  &__content {
+    grid-column: 1 / -1;
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 80px;
+    }
+
+    @include on-desktop {
+      grid-column: 1 / span 5;
+    }
+  }
+
+  &__row {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    display: block;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: 48px;
+    padding: 12px 20px;
+    border: 1px solid #828282;
+
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #BDBDBD;
+
+    &--textarea {
+      resize: none;
+      height: 148px;
+      padding: 14px 16px;
+      line-height: 140%;
+    }
+
+    &:hover {
+      border: $border-small solid $row-hover-border;
+      color: $main-text-color;
+    }
+
+    &:focus-visible {
+      border: $border-small solid $main-text-color;
+      outline: none;
+    }
+  }
+
+  input:-webkit-autofill,
+  textarea:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px $row-background-color inset;
+    transition: background-color 5000s ease-in-out;
+
+    -webkit-text-fill-color: $row-color;
+  }
+
+  &__infos {
+    grid-column: 1 / -1;
+
+    @include on-desktop {
+      grid-column: 7 / -1;
+    }
+  }
+
+  &__info {
+    margin-bottom: 24px;
+  }
+
+  &__item {
+    margin: 0;
+
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-weight: 400;
+    color: $row-color;
+    text-decoration: none;
+
+    @include hover(color, $row-color-dark);
+
+    &--bold {
+      font-size: 16px;
+      color: $row-color-bold;
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+
+    box-sizing: border-box;
+    width: 102px;
+    height: 40px;
+    border: 0 solid transparent;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 100%;
+    color: $color-white;
+
+    background-color: #39BEBF;
+    outline: none;
+    
+    transition:
+      background-color $effectDuration;
+
+    &:hover {
+      transform: scale(0.98);
+      background-color: #0C797A;
+    }
+
+    &:disabled {
+      background-color: #CFEFF0;
+    }
+
+    @include on-desktop {
+      width: 124px;
+      height: 48px;
+    }
+  }
+}

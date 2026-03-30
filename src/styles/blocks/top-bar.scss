@@ -2,7 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding-block: 24px;
+  
+  background-color: $c-gray;
 
   /* @include on-tablet {
     padding-block: 64px;
