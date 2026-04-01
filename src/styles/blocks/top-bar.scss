@@ -4,17 +4,22 @@
   justify-content: space-between;
 
   padding-block: 24px;
-  
+
   background-color: $c-gray;
 
   /* @include on-tablet {
     padding-block: 64px;
   } */
 
-  /* &__icons {
+  &__icons {
     display: flex;
-    gap: 24px;
-  } */
+    gap: 30px;
+    align-items: center;
+
+    @include on-desktop {
+      gap: 47px;
+    }
+  }
 
   /* &__logo-link {
     display: flex;

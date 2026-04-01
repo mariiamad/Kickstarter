@@ -1,8 +1,11 @@
 .button {
   cursor: pointer;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   box-sizing: border-box;
-  width: 100%;
   height: 48px;
   margin-top: auto;
   margin-bottom: 30px;
@@ -15,7 +18,6 @@
   color: $color-white;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0%;
 
   background-color: $main-text-color;
   outline: none;
@@ -24,10 +26,6 @@
     background-color $effectDuration,
     color $effectDuration,
     border $effectDuration;
-
-  @include on-desktop {
-    grid-column: span 4;
-  }
 
   /* &--large {
     grid-column: 1 / -1;
@@ -49,5 +47,23 @@
     transform: scale(0.98);
     color: $color-white;
     background-color: $color-dark-gray;
+  }
+
+  @include on-tablet {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @include on-tablet {
+      display: flex;
+      width: 100px;
+      margin: 0 auto;
+    }
+
+    @include on-desktop {
+      width: 102px;
+    }
   }
 }

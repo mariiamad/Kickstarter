@@ -49,10 +49,11 @@
     margin-bottom: 20px;
 
      @include on-tablet {
-      margin-bottom: 0;
-      margin-left: -34px;
       width: calc(100% + 34px);
       height: 415px;
+      margin-bottom: 0;
+      margin-left: -34px;
+
       object-fit: cover;
     }
   }
@@ -66,16 +67,17 @@
     color: $main-color;
 
     @include on-tablet {
+      align-self: stretch;
       margin-bottom: 60px;
       font-size: 16px;
       line-height: 24px;
-      align-self: stretch;
     }
   }
 
   &__link {
     position: relative;
-    display: inline-block;
+
+    /* display: inline-block; */
 
     font-size: 12px;
     line-height: 14px;
@@ -88,6 +90,8 @@
       position: absolute;
       bottom: -6px;
       left: 0;
+      transform-origin: left;
+      transform: scale(0.4);
 
       display: block;
 
@@ -96,15 +100,12 @@
 
       background-color: $color-link;
 
-      transform: scaleX(0.4);
-      transform-origin: left;
-
       transition: transform $effectDuration;
 
 
       @include on-tablet {
         bottom: -5px;
-        transform: scaleX(0.1);
+        transform: scaleX(0.2);
       }
 
       @include on-desktop {
@@ -113,7 +114,7 @@
     }
 
     &:hover::after {
-      transform: scaleX(1);
+      transform: scale(1);
     }
   }
 }

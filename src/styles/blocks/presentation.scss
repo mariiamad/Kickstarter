@@ -1,8 +1,6 @@
 .presentation {
   margin-inline: 12px;
 
-  @include card-hover;
-
   &__photo {
     aspect-ratio: 320 / 195;
     width: 100%;

@@ -8,6 +8,13 @@
     padding: 0;
 
     list-style: none;
+
+    @include on-desktop {
+      display: flex;
+      flex-direction: row;
+      gap: 84px;
+      margin-block: 28px;
+    }
   }
 
   &__link {
@@ -52,6 +59,19 @@
   display: flex;
   gap: 20px;
   align-items: center;
+
+  @include on-tablet {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @include on-tablet {
+      display: flex;
+      gap: 30px;
+    }
+  }
 
   &__word {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;

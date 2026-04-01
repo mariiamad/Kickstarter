@@ -10,13 +10,11 @@
 
   &__item {
     cursor: pointer;
-    
     display: flex;
+    grid-column: span 4;
     flex-direction: column;
 
     @include card-hover;
-
-    grid-column: span 4;
 
     &:nth-child(n+2) {
       display: none;
@@ -27,11 +25,11 @@
     }
 
     @include on-tablet {
-      grid-column: span 4; // 2 в ряд (8 колонок / 4)
+      grid-column: span 4;
     }
 
     @include on-desktop {
-      grid-column: span 3; // 4 в ряд (12 / 3)
+      grid-column: span 3;
     }
   }
 
