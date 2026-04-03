@@ -3,6 +3,10 @@
   box-sizing: border-box;
   background-color: $c-gray;
 
+  @include on-tablet {
+    padding-top: 37px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;

@@ -7,31 +7,15 @@
 
   background-color: $c-gray;
 
-  /* @include on-tablet {
-    padding-block: 64px;
-  } */
-
   &__icons {
     display: flex;
     gap: 30px;
     align-items: center;
-
-    @include on-desktop {
-      gap: 47px;
-    }
   }
 
-  /* &__logo-link {
-    display: flex;
-  }
- */
   &__logo {
     height: 26px;
 
     @include hover(transform, scale(1.2));
-
-   /*  @include on-tablet {
-      height: 24px;
-    } */
   }
 }

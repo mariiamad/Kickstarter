@@ -79,6 +79,8 @@
     font-weight: 300;
     line-height: 100%;
     color: $speacs-color;
+
+    @include hover(transform, scale(1.2));
   }
 
   &__icon {

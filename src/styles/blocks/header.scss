@@ -22,7 +22,6 @@
   }
 
   &__image {
-    /* aspect-ratio: 320 / 245; */
     width: 100%;
     width: calc(100% + 60px);
     height: 245px;
@@ -41,8 +40,6 @@
       align-self: stretch;
 
       height: auto;
-
-      /* background-size: cover; */
       margin: 0;
 
       background-image: url(../images/image-tablet.png);

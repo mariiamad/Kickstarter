@@ -3,9 +3,13 @@
   flex-direction: column;
   align-items: center;
 
+  @include on-desktop {
+    margin-inline: 204px;
+  }
+
   @include card-hover;
 
-  &__img{
+  &__img {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -13,7 +17,7 @@
     height: 171px;
     margin-bottom: 30px;
 
-    background-image: url(../images/main-img/testimonius-background.png);
+    background-image: url(../images/main-img/testimonilas-background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -21,7 +25,7 @@
     @include on-tablet {
       justify-content: center;
       height: 189px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
 
     @include on-desktop {
@@ -31,7 +35,7 @@
     }
   }
 
-  &__category {
+  &__text {
     margin: 0;
 
     font-family: Inter, sans-serif;
@@ -42,6 +46,13 @@
     letter-spacing: 0%;
 
     @include on-tablet {
+      margin-top: auto;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    @include on-desktop {
+      margin-top: 0;
       font-size: 24px;
       line-height: 36px;
     }
