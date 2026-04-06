@@ -23,11 +23,27 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new WOW().init();
+      });
+    </script>
   </head>
   <body class="page__body" id="top">
     <header class="header">
       <div class="container">
-        <div class="top-bar">
+        <div
+          class="top-bar
+          wow animate__animated
+          animate__fadeInDown"
+          data-wow-delay="0.8s"
+        >
           <a href="#top" class="top-bar__logo-link">
             <img
               src="./src/images/logo-2x.png"
@@ -36,7 +52,7 @@
             >
           </a>
 
-          <div class="top-bar__icons">
+          <div class="top-bar__actions">
             <div class="specs specs--tablet">
               <div class="specs__word">
                 SPECS
@@ -53,7 +69,12 @@
           </div>
         </div>
 
-        <div class="header__bottom">
+        <div
+          class="header__bottom
+          wow animate__animated
+          animate__fadeInLeft"
+          data-wow-offset="0.8"
+        >
           <div class="header__image"></div>
 
           <h1 class="header__title">
@@ -65,11 +86,18 @@
           </h1>
 
           <p class="header__description">
-            Luna’s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctly more layered.
+            Luna’s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctlymore layered.
           </p>
         </div>
 
-        <nav class="nav nav--desktop header__nav">
+        <nav
+          class="header__nav
+          nav nav--desktop
+          wow animate__animated
+          animate__fadeInUpBig"
+          data-wow-duration="0.8s"
+          data-wow-offset="100"
+        >
           <ul class="nav__list">
             <li class="nav__item">
               <a  class="nav__link nav__link--bold" href="#our-story">OUR STORY</a>
@@ -102,6 +130,7 @@
                 class="top-bar__logo"
               >
             </a>
+
             <a href="#" class="icon icon--close"></a>
           </div>
 
@@ -142,8 +171,13 @@
       <div class="container">
         <div class="main__content">
           <section class="benefits" id="our-story">
-            <div class="benefits__container">
-              <article class="benefits__item">
+            <div class="benefits__content">
+              <article
+                class="benefits__item
+                wow animate__animated
+                animate__fadeInLeft"
+                data-wow-delay="0.8s"
+              >
                 <div class="benefits__icon"></div>
 
                 <h2 class="benefits__title">Futuristic Design</h2>
@@ -153,7 +187,12 @@
                 </p>
               </article>
 
-              <article class="benefits__item">
+              <article
+                class="benefits__item
+                wow animate__animated
+                animate__fadeInRight"
+                data-wow-delay="0.8s"
+              >
                 <div class="benefits__icon benefits__icon--2"></div>
 
                 <h2 class="benefits__title">Tweeter Speaker System</h2>
@@ -163,7 +202,12 @@
                 </p>
               </article>
 
-              <article class="benefits__item">
+              <article
+                class="benefits__item
+                wow animate__animated
+                animate__fadeInLeft"
+                data-wow-delay="0.8s"
+              >
                 <div class="benefits__icon benefits__icon--3"></div>
 
                 <h2 class="benefits__title">Multiroom System</h2>
@@ -173,7 +217,12 @@
                 </p>
               </article>
 
-              <article class="benefits__item">
+              <article
+                class="benefits__item
+                wow animate__animated
+                animate__fadeInRight"
+                data-wow-delay="0.8s"
+              >
                 <div class="benefits__icon benefits__icon--4"></div>
 
                 <h2 class="benefits__title">Intuitive Lighting System</h2>
@@ -185,10 +234,21 @@
             </div>
           </section>
 
-          <div class="presentation"></div>
+          <div
+            class="presentation
+            wow animate__animated
+            animate__fadeInRight"
+            data-wow-offset="0.8"
+          >
+          </div>
 
           <section class="about-us" id="about-us">
-            <article class="technology about-us__technology">
+            <article
+              class="technology
+              wow animate__animated
+              animate__fadeInUp"
+              data-wow-duration="0.8s"
+            >
               <h3 class="technology__title">DESIGNED FOR THE FUTURE</h3>
 
               <img
@@ -197,16 +257,23 @@
                 class="technology__photo"
               >
 
-              <p class="technology__text">
-                In 2014, a group of geeky industrial designers, engineering veterans and acoustic experts formed crazybaby. This is a bunch of passionate people who are crazy enough to think they can challenge the industry with disruptive audio products.
-              </p>
+              <div class="technology__info">
+                <p class="technology__text">
+                  In 2014, a group of geeky industrial designers, engineering veterans and acoustic experts formed crazybaby. This is a bunch of passionate people who are crazy enough to think they can challenge the industry with disruptive audio products.
+                </p>
 
-              <a class="technology__link"><span>See more about us</span></a>
+                <a class="technology__link">See more about us</a>
+              </div>
             </article>
           </section>
 
           <section class="about-us">
-            <article class="technology about-us__technology">
+            <article
+              class="technology technology--eye
+              wow animate__animated
+              animate__fadeInUp"
+              data-wow-duration="0.8s"
+            >
               <h3 class="technology__title">Luna Eye</h3>
 
               <img
@@ -215,19 +282,26 @@
                 class="technology__photo"
               >
 
-              <p class="technology__text">
-                Luna Eye is to the essence of this innovative light and audio system. It comprises an independent tweeter speaker, a light guiding component, a dome and a ring ornament.
-              </p>
+              <div class="technology__info">
+                <p class="technology__text">
+                  Luna Eye is to the essence of this innovative light and audio system. It comprises an independent tweeter speaker, a light guiding component, a dome and a ring ornament.
+                </p>
 
-              <a class="technology__link">See more about us</a>
+                <a class="technology__link">See more about us</a>
+              </div>
             </article>
           </section>
 
           <section>
-            <article class="testimonilas">
-              <div class="testimonilas__content">
-                <div class="testimonilas__img">
-                  <p class="testimonilas__text">
+            <article
+              class="testimonials
+              wow animate__animated
+              animate__fadeInRight"
+              data-wow-delay="0.8s"
+            >
+              <div class="testimonials__content">
+                <div class="testimonials__img">
+                  <p class="testimonials__text">
                     “It really took me by surprise honestly to have such full beautiful sound that coming out of this small compact device. And with the brush aluminum surface, it feels so familiar. Like my iPhone.”
                   </p>
                 </div>
@@ -235,12 +309,12 @@
                 <img
                   src="./src/images/main-img/ellipse.svg"
                   alt="Foto Garrett Martin"
-                  class="testimonilas__photo"
+                  class="testimonials__photo"
                 >
 
-                <p class="testimonilas__text testimonilas__text--size">Garrett Martin</p>
+                <p class="testimonials__text testimonials__text--size">Garrett Martin</p>
 
-                <p class="testimonilas__text testimonilas__text--color">Creative Director</p>
+                <p class="testimonials__text testimonials__text--color">Creative Director</p>
               </div>
             </article>
           </section>
@@ -249,7 +323,14 @@
             <h3 class="features__title">Features</h3>
 
             <div class="features__container">
-              <article class="features__section features__section--desktop features__section--left">
+              <article
+                class="features__section
+                features__section--desktop
+                features__section--left
+                wow animate__animated
+                animate__fadeInLeft"
+                data-wow-delay="0.8s"
+              >
                 <h4 class="features__subtitle">Connectivity</h4>
 
                 <ul class="features__list">
@@ -279,7 +360,14 @@
                 </ul>
               </article>
 
-              <article class="features__section features__section--desktop features__section--right">
+              <article
+                class="features__section
+                features__section--desktop
+                features__section--right
+                wow animate__animated
+                animate__fadeInLeft"
+                data-wow-delay="0.8s"
+              >
                 <h4 class="features__subtitle">App Features</h4>
 
                 <ul class="features__list">
@@ -301,7 +389,13 @@
                 </ul>
               </article>
 
-              <article class="features__section features__section--bottom-left">
+              <article
+                class="features__section
+                features__section--bottom-left
+                wow animate__animated
+                animate__fadeInLeft"
+                data-wow-delay="0.8s"
+              >
                 <h4 class="features__subtitle">Sound & Music</h4>
 
                 <ul class="features__list">
@@ -332,8 +426,21 @@
               </article>
 
               <div class="features__media">
-                <div class="features__icon"></div>
-                <div class="features__image"></div>
+                <div
+                  class="features__icon
+                  wow animate__animated
+                  animate__fadeInRight"
+                  data-wow-delay="0.8s"
+                >
+                </div>
+
+                <div
+                  class="features__image
+                  wow animate__animated
+                  animate__fadeInRight"
+                  data-wow-delay="0.8s"
+                >
+                </div>
               </div>
             </div>
           </section>
@@ -342,14 +449,19 @@
 
             <h2 class="
               questions__title
-              section-title
-            ">
+              wow animate__animated
+              animate__fadeInLeft"
+              data-wow-delay="0.8s"
+            >
               DO YOU HAVE ANY QUESTIONS?
             </h2>
 
             <form
               onsubmit="this.reset(); return false;"
-              class="questions__content"
+              class="questions__content
+              wow animate__animated
+              animate__fadeInRight"
+              data-wow-delay="0.8s"
             >
               <div class="questions__row">
                 <input
@@ -379,7 +491,12 @@
       </div>
     </main>
 
-    <footer class="footer">
+    <footer
+      class="footer
+      wow animate__animated
+      animate__fadeInUpBig"
+      data-wow-duration="0.8s"
+    >
       <div class="container">
         <div class="footer__content">
           <div class="footer__top">
@@ -406,7 +523,7 @@
 
             <a href="#" class="footer__icon footer__icon--instagram"></a>
           </div>
-          
+
           <p class="footer__line">
             © 2019 All rights reserved. Terms of Use & Privacy Policy
           </p>

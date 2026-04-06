@@ -8,6 +8,7 @@
   }
 
   &__bottom {
+
     @include on-tablet {
       grid-auto-rows: minmax(auto, max-content);
       align-items: end;

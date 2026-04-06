@@ -1,8 +1,8 @@
 .benefits {
   padding: 0;
-  border-radius: $border-radius-smoll;
+  font-family: Inter, sans-serif;
 
-  &__container {
+  &__content {
     margin-top: auto;
 
     @include page-grid;
@@ -70,7 +70,6 @@
   &__title {
     margin-bottom: 20px;
 
-    font-family: Inter, sans-serif;
     font-size: 22px;
     font-weight: 700;
     line-height: 28px;
@@ -81,7 +80,6 @@
   &__text {
     margin-top: 0;
 
-    font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 21px;

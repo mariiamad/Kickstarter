@@ -23,30 +23,21 @@
   outline: none;
 
   transition:
-    background-color $effectDuration,
-    color $effectDuration,
-    border $effectDuration;
-
-  /* &--large {
-    grid-column: 1 / -1;
-    margin-top: 16px;
-    line-height: 27px;
-
-    @include on-desktop {
-      grid-column: span 5;
-    }
-  } */
+    background-color $effectDuration;
 
   &:hover {
-    border: $border-big solid $color-button-hover;
-    color: $main-text-color;
-    background-color: $row-background-color;
+    background-color: $menu-color-bold;
   }
 
   &:active {
     transform: scale(0.98);
-    color: $color-white;
-    background-color: $color-dark-gray;
+    background-color: $color-button-disabled;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: $color-button-disabled;
   }
 
   @include on-tablet {
