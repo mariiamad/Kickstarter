@@ -11,7 +11,7 @@
   margin-bottom: 30px;
   border: 0 solid transparent;
 
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 100%;
@@ -22,8 +22,7 @@
   background-color: $main-text-color;
   outline: none;
 
-  transition:
-    background-color $effectDuration;
+  transition: background-color $effectDuration;
 
   &:hover {
     background-color: $menu-color-bold;

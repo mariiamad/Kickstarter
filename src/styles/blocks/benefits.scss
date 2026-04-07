@@ -16,7 +16,7 @@
 
     @include card-hover;
 
-    &:nth-child(n+2) {
+    &:nth-child(n + 2) {
       display: none;
 
       @include on-tablet {

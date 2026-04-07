@@ -8,7 +8,6 @@
   }
 
   &__bottom {
-
     @include on-tablet {
       grid-auto-rows: minmax(auto, max-content);
       align-items: end;
@@ -82,7 +81,7 @@
     line-height: 24px;
 
     @include on-tablet {
-      grid-column: 1 /span 3;
+      grid-column: 1 / span 3;
       grid-row: 2;
     }
   }
