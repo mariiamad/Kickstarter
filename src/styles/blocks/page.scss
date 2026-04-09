@@ -6,10 +6,6 @@
   color: $main-text-color;
   letter-spacing: 0;
 
-  &:has(.page__menu:target) {
-    overflow: hidden;
-  }
-
   &__body {
     min-width: 320px;
     margin: 0;

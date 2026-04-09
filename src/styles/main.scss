@@ -23,4 +23,8 @@
 body {
   overflow-x: hidden;
   background: $c-gray;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
 }
