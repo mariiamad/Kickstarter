@@ -56,10 +56,10 @@
 }
 
 .specs {
+  cursor: pointer;
   display: flex;
   gap: 20px;
   align-items: center;
-  cursor: pointer;
 
   @include on-tablet {
     display: none;
