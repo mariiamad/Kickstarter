@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Kickstarter</title>
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="/Kickstarter/assets/favicon-qxW5TzeU.png"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    >
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new WOW().init();
+      });
+    </script>
+    <script type="module" crossorigin src="/Kickstarter/assets/index-DUWMqhWr.js"></script>
+    <link rel="stylesheet" crossorigin href="/Kickstarter/assets/index-Chrw71Xx.css">
+  </head>
+  <body class="page__body" id="top">
+    <header class="header">
+      <div class="container">
+        <div
+          class="top-bar
+          wow animate__animated
+          animate__fadeInDown"
+          data-wow-delay="0.8s"
+        >
+          <a href="#top" class="top-bar__logo-link">
+            <img
+              src="data:image/png;base64,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"
+              alt="Kickstarter logo"
+              class="top-bar__logo"
+            >
+          </a>
+
+          <div class="top-bar__actions">
+            <div class="specs specs--tablet">
+              <div class="specs__word">
+                SPECS
+              </div>
+
+              <div class="specs__icon"></div>
+            </div>
+
+            <button type="button" class="button button--tablet">
+              Buy
+            </button>
+
+            <a href="#menu" class="icon icon--menu"></a>
+          </div>
+        </div>
+
+        <div
+          class="header__bottom
+          wow animate__animated
+          animate__fadeInLeft"
+          data-wow-offset="0.8"
+        >
+          <div class="header__image"></div>
+
+          <h1 class="header__title">
+            Futuristic
+            <br>
+            Wireless
+            <br>
+            Speaker
+          </h1>
+
+          <p class="header__description">
+            Luna’s performance is balanced and smooth in all frequency ranges which makes the music both naturally pleasant and distinctlymore layered.
+          </p>
+        </div>
+
+        <nav
+          class="header__nav
+          nav nav--desktop
+          wow animate__animated
+          animate__fadeInUpBig"
+          data-wow-duration="0.8s"
+          data-wow-offset="100"
+        >
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a  class="nav__link nav__link--bold" href="#our-story">OUR STORY</a>
+            </li>
+
+            <li class="nav__item">
+              <a  class="nav__link" href="#about-us">ABOUT US</a>
+            </li>
+
+            <li class="nav__item">
+              <a  class="nav__link" href="#features">FEATURES</a>
+            </li>
+
+            <li class="nav__item">
+              <a  class="nav__link" href="#get-in-touch">GET IN TOUCH</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="menu page__menu" id="menu">
+      <div class="container">
+        <div class="menu__content">
+          <div class="top-bar menu__top">
+            <a href="#top" class="top-bar__logo-link">
+              <img
+                src="data:image/png;base64,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"
+                alt="Nothing logo"
+                class="top-bar__logo"
+              >
+            </a>
+
+            <a href="#" class="icon icon--close"></a>
+          </div>
+
+          <div class="menu__bottom">
+            <nav class="nav menu__nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a  class="nav__link nav__link--bold" href="#our-story">OUR STORY</a>
+                </li>
+
+                <li class="nav__item">
+                  <a  class="nav__link" href="#about-us">ABOUT US</a>
+                </li>
+
+                <li class="nav__item">
+                  <a  class="nav__link" href="#features">FEATURES</a>
+                </li>
+
+                <li class="nav__item">
+                  <a  class="nav__link" href="#get-in-touch">GET IN TOUCH</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="specs">
+              <div class="specs__word">
+                SPECS
+              </div>
+              <div class="specs__icon"></div>
+            </div>
+          </div>
+
+          <button type="button" class="button">
+              Buy
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="container">
+        <div class="main__content">
+          <section class="benefits" id="our-story">
+            <div class="benefits__content">
+              <article
+                class="benefits__item
+                wow animate__animated
+                animate__fadeInLeft"
+                data-wow-delay="0.8s"
+              >
+                <div class="benefits__icon"></div>
+
+                <h2 class="benefits__title">Futuristic Design</h2>
+
+                <p class="benefits__text">
+                  To give Luna a truly flawless look, we specifically picked aircraft grade aluminum as its material and adopted both three-dimensional stretch-bending technology and a high precision cold forging technique.
+                </p>
+              </article>
+
+              <article
+                class="benefits__item
+                wow animate__animated
+                animate__fadeInRight"
+                data-wow-delay="0.8s"
+              >
+                <div class="benefits__icon benefits__icon--2"></div>
+
+                <h2 class="benefits__title">Tweeter Speaker System</h2>
+
+                <p class="benefits__text">
+                  To deliver a more layered sound performance better than a sole full-range speaker, our team equipped Luna with one more tweeter speaker responsible for high-frequency sound independently.
+                </p>
+              </article>
+
+              <article
+                class="benefits__item
+                wow animate__animated
+                animate__fadeInLeft"
+                data-wow-delay="0.8s"
+              >
+                <div class="benefits__icon benefits__icon--3"></div>
+
+                <h2 class="benefits__title">Multiroom System</h2>
+
+                <p class="benefits__text">
+                  Luna is natively compatible with your home Wi-Fi. Set up multiple speakers in different rooms to expand your music experience into the entire house.
+                </p>
+              </article>
+
+              <article
+                class="benefits__item
+                wow animate__animated
+                animate__fadeInRight"
+                data-wow-delay="0.8s"
+              >
+                <div class="benefits__icon benefits__icon--4"></div>
+
+                <h2 class="benefits__title">Intuitive Lighting System</h2>
+
+                <p class="benefits__text">
+                  An intuitive user interface allows you to adjust the hue and saturation of color for lighting that fits any mood and situation.
+                </p>
+              </article>
+            </div>
+          </section>
+
+          <div
+            class="presentation
+            wow animate__animated
+            animate__fadeInRight"
+            data-wow-offset="0.8"
+          >
+          </div>
+
+          <section class="about-us" id="about-us">
+            <article
+              class="technology
+              wow animate__animated
+              animate__fadeInUp"
+              data-wow-duration="0.8s"
+            >
+              <h3 class="technology__title">DESIGNED FOR THE FUTURE</h3>
+
+              <img
+                src="/Kickstarter/assets/designos-BwXiXr5T.png"
+                alt="Ear (stick)"
+                class="technology__photo"
+              >
+
+              <div class="technology__info">
+                <p class="technology__text">
+                  In 2014, a group of geeky industrial designers, engineering veterans and acoustic experts formed crazybaby. This is a bunch of passionate people who are crazy enough to think they can challenge the industry with disruptive audio products.
+                </p>
+
+                <a class="technology__link">See more about us</a>
+              </div>
+            </article>
+          </section>
+
+          <section class="about-us">
+            <article
+              class="technology technology--eye
+              wow animate__animated
+              animate__fadeInUp"
+              data-wow-duration="0.8s"
+            >
+              <h3 class="technology__title">Luna Eye</h3>
+
+              <img
+                src="/Kickstarter/assets/luna-eye-BKBlSd7A.png"
+                alt="Luna Eye"
+                class="technology__photo"
+              >
+
+              <div class="technology__info">
+                <p class="technology__text">
+                  Luna Eye is to the essence of this innovative light and audio system. It comprises an independent tweeter speaker, a light guiding component, a dome and a ring ornament.
+                </p>
+
+                <a class="technology__link">See more about us</a>
+              </div>
+            </article>
+          </section>
+
+          <section>
+            <article
+              class="testimonials
+              wow animate__animated
+              animate__fadeInRight"
+              data-wow-delay="0.8s"
+            >
+              <div class="testimonials__content">
+                <div class="testimonials__img">
+                  <p class="testimonials__text">
+                    “It really took me by surprise honestly to have such full beautiful sound that coming out of this small compact device. And with the brush aluminum surface, it feels so familiar. Like my iPhone.”
+                  </p>
+                </div>
+
+                <img
+                  src="/Kickstarter/assets/ellipse-DY_-lMVc.svg"
+                  alt="Foto Garrett Martin"
+                  class="testimonials__photo"
+                >
+
+                <p class="testimonials__text testimonials__text--size">Garrett Martin</p>
+
+                <p class="testimonials__text testimonials__text--color">Creative Director</p>
+              </div>
+            </article>
+          </section>
+
+          <section
+            class="features
+            wow animate__animated
+            animate__fadeInLeft"
+            data-wow-delay="0.8s"
+            id="features"
+          >
+            <h3 class="features__title">Features</h3>
+
+            <div class="features__container">
+              <div class="features__content">
+                <div class="features__slider-wrapper">
+                  <div class="features__slider" id="featuresSlider">
+                    <article class="features__slide">
+                      <div class="features__slide-content">
+                        <h4 class="features__subtitle">Sound & Music</h4>
+
+                        <ul class="features__list">
+                          <li class="features__item">Feel-in-chest Base Power</li>
+
+                          <li class="features__item">Lossless Digital Audio Transmission</li>
+
+                          <li class="features__item">Easy & Stable Stereo Pairing</li>
+
+                          <li class="features__item">
+                            Crisp and Clear High Frequency <br> Sound
+                          </li>
+
+                          <li class="features__item">
+                            Streams from Cloud Music and Local <br> Library
+                          </li>
+
+                          <li class="features__item">
+                            Auto Music Playback from Last Song <br> Stopped
+                          </li>
+                        </ul>
+                      </div>
+                    </article>
+
+                    <article class="features__slide">
+                      <div class="features__slide-content">
+                        <h4 class="features__subtitle">Connectivity</h4>
+
+                        <ul class="features__list">
+                          <li class="features__item">Hands Free Wireless Audio</li>
+
+                          <li class="features__item">Bluetooth 4.0 LE</li>
+
+                          <li class="features__item">Wi-Fi 2.4 GHz (802.11 b/g/n)</li>
+
+                          <li class="features__item">Smart Multiroom System Set Up</li>
+
+                          <li class="features__item">Party Mode with 6.0 Units and above</li>
+
+                          <li class="features__item">MESHNET Multi Speaker Network</li>
+                        </ul>
+                      </div>
+                    </article>
+
+                    <article class="features__slide">
+                      <div class="features__slide-content">
+                        <h4 class="features__subtitle">App Features</h4>
+
+                        <ul class="features__list">
+                          <li class="features__item">Customize Music Schedule</li>
+
+                          <li class="features__item">Wake Up with Favorite Songs</li>
+
+                          <li class="features__item">Home Detection Auto Wake Up</li>
+
+                          <li class="features__item">Color Wheel</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+
+                <div class="features__bottom">
+                  <div class="features__controls">
+                    <div class="features__arrows">
+                      <button
+                        class="features__arrow features__arrow--left"
+                        id="featuresPrev"
+                        type="button"
+                        aria-label="Previous slide"
+                      >
+                      </button>
+
+                      <button
+                        class="features__arrow features__arrow--right"
+                        id="featuresNext"
+                        type="button"
+                        aria-label="Next slide"
+                      ></button>
+                    </div>
+
+                    <div class="features__counter">
+                      <span class="features__current" id="featuresCurrent">01</span>
+
+                      <span class="features__divider">/</span>
+
+                      <span class="features__total">03</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="features__image"></div>
+
+
+              <article class="features__desktop features__desktop--left">
+                <h4 class="features__subtitle">Connectivity</h4>
+
+                <ul class="features__list">
+                  <li class="features__item">Hands Free Wireless Audio</li>
+
+                  <li class="features__item">Bluetooth 4.0 LE</li>
+
+                  <li class="features__item">Wi-Fi 2.4 GHz (802.11 b/g/n)</li>
+
+                  <li class="features__item">Smart Multiroom System Set Up</li>
+
+                  <li class="features__item">Party Mode with 6.0 Units and above</li>
+
+                  <li class="features__item">MESHNET Multi Speaker Network</li>
+                </ul>
+              </article>
+
+              <article class="features__desktop features__desktop--top-right">
+                <h4 class="features__subtitle">App Features</h4>
+
+                <ul class="features__list">
+                  <li class="features__item">Customize Music Schedule</li>
+
+                  <li class="features__item">Wake Up with Favorite Songs</li>
+
+                  <li class="features__item">Home Detection Auto Wake Up</li>
+
+                  <li class="features__item">Color Wheel</li>
+                </ul>
+              </article>
+
+              <article class="features__desktop features__desktop--bottom-left">
+                <h4 class="features__subtitle">Sound & Music</h4>
+
+                <ul class="features__list">
+                  <li class="features__item">Feel-in-chest Base Power</li>
+
+                  <li class="features__item">Lossless Digital Audio Transmission</li>
+
+                  <li class="features__item">Easy & Stable Stereo Pairing</li>
+
+                  <li class="features__item">Crisp and Clear High Frequency Sound</li>
+
+                  <li class="features__item">Streams from Cloud Music and Local Library</li>
+
+                  <li class="features__item">Auto Music Playback from Last Song Stopped</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="questions" id="get-in-touch">
+
+            <h2 class="
+              questions__title
+              wow animate__animated
+              animate__fadeInLeft"
+              data-wow-delay="0.8s"
+            >
+              DO YOU HAVE ANY QUESTIONS?
+            </h2>
+
+            <form
+              class="questions__content
+              wow animate__animated
+              animate__fadeInRight"
+              data-wow-delay="0.8s"
+            >
+              <div class="questions__row">
+                <input
+                  type="email"
+                  name="email"
+                  class="questions__text selected"
+                  placeholder="Your email"
+                  required
+                >
+              </div>
+
+              <div class="questions__row">
+                <textarea
+                  name="message"
+                  class="questions__text questions__text--textarea"
+                  placeholder="Your message..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="questions__button">
+                Send
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="footer
+      wow animate__animated
+      animate__fadeInUpBig"
+      data-wow-duration="0.8s"
+    >
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__top">
+            <a href="#top">
+              <img
+                src="data:image/png;base64,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"
+                alt="Nothing logo"
+                class="footer__logo"
+              >
+            </a>
+
+            <a href="#top" class="footer__arrow">
+              <img
+                src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.4286%2024L10.5714%2024L10.5714%206L4.85714%2012L2%2010.5L12%20-4.36936e-07L22%2010.5L19.1429%2012L13.4286%206L13.4286%2024Z'%20fill='%23333333'/%3e%3c/svg%3e"
+                alt="arrow"
+              >
+            </a>
+          </div>
+
+          <div class="footer__icons">
+            <a href="#" class="footer__icon footer__icon--facebook"></a>
+
+            <a href="#" class="footer__icon footer__icon--twitter"></a>
+
+            <a href="#" class="footer__icon footer__icon--instagram"></a>
+          </div>
+
+          <p class="footer__line">
+            © 2019 All rights reserved. Terms of Use & Privacy Policy
+          </p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+</html>
